@@ -19,6 +19,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "fileloader.h"
+#include <cstring>
 
 #ifndef min
 #define min(a,b) ( a < b ? a : b)

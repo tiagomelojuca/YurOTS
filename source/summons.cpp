@@ -19,6 +19,7 @@
 //////////////////////////////////////////////////////////////////////
 #ifdef TR_SUMMONS
 #include "summons.h"
+#include <cstring>
 #include "luascript.h"
 #include <libxml/xmlmemory.h>
 #include <libxml/parser.h>
