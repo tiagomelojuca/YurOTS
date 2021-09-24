@@ -18,6 +18,7 @@
 // Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 //////////////////////////////////////////////////////////////////////
 
+#include <cstdint>
 
 #include "definitions.h"
 #include "const76.h"
@@ -454,7 +455,7 @@ _player(NULL)
 	else
 		fclose(in);
 	lua_dofile(luaState, scriptname.c_str());
-	this->setGlobalNumber("addressOfActionScript", (int)this);
+	this->setGlobalNumber("addressOfActionScript", (uint64_t)this);
 	this->loaded = true;
 	this->registerFunctions();
 }

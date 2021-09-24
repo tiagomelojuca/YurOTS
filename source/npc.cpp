@@ -21,6 +21,7 @@
 
 #include "definitions.h"
 
+#include <cstdint>
 #include <algorithm>
 #include <functional>
 #include <string>
@@ -364,7 +365,7 @@ NpcScript::NpcScript(std::string scriptname, Npc* npc){
 	lua_dofile(luaState, scriptname.c_str());
 	this->loaded=true;
 	this->npc=npc;
-	this->setGlobalNumber("addressOfNpc", (int)npc);
+	this->setGlobalNumber("addressOfNpc", (uint64_t)npc);
 	this->registerFunctions();
 }
 

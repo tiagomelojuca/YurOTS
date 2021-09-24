@@ -21,6 +21,7 @@
 
 #include "definitions.h"
 
+#include <cstdint>
 #include <algorithm>
 #include <functional>
 #include <string>
@@ -273,7 +274,7 @@ SpellScript::SpellScript(const std::string &datadir, std::string scriptname, Spe
 	lua_dofile(luaState, scriptname.c_str());
 	this->loaded=true;
 	this->spell=spell;
-	this->setGlobalNumber("addressOfSpell", (int)spell);
+	this->setGlobalNumber("addressOfSpell", (uint64_t)spell);
 	this->registerFunctions();
 }
 
