@@ -8,7 +8,7 @@
             "name": "Debug YurOTS",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/yurots.exe",
+            "program": "${workspaceFolder}/build/exeobj_cmake/yurots.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

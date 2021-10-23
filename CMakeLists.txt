@@ -80,3 +80,16 @@ target_include_directories(
 )
 
 target_link_libraries(yurots PRIVATE libxml2 liblua liblualib boost_regex ws2_32)
+
+set(OUT_FOLDER "exeobj_cmake")
+set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR})
+install(TARGETS yurots DESTINATION "${OUT_FOLDER}")
+install(FILES "${CMAKE_SOURCE_DIR}/config.lua" DESTINATION "${OUT_FOLDER}")
+install(
+    DIRECTORY
+    "${CMAKE_SOURCE_DIR}/data"
+    "${CMAKE_SOURCE_DIR}/docs"
+    "${CMAKE_SOURCE_DIR}/perl"
+    DESTINATION
+    "${OUT_FOLDER}"
+)
