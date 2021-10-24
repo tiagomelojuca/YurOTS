@@ -11,7 +11,7 @@
             "program": "${workspaceFolder}/build/exeobj_cmake/yurots.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/build/exeobj_cmake",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
