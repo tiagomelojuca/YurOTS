@@ -40,6 +40,10 @@ typedef unsigned int uint32_t;
 typedef unsigned short uint16_t;
 typedef unsigned char uint8_t;
 
+#ifndef uintptr_t
+#define uintptr_t size_t
+#endif
+
 #pragma warning(disable:4786) // msvc too long debug names in stl
 
 #ifdef MIN

@@ -274,7 +274,7 @@ SpellScript::SpellScript(const std::string &datadir, std::string scriptname, Spe
 	lua_dofile(luaState, scriptname.c_str());
 	this->loaded=true;
 	this->spell=spell;
-	this->setGlobalNumber("addressOfSpell", (uint64_t)spell);
+	this->setGlobalNumber("addressOfSpell", (uintptr_t)spell);
 	this->registerFunctions();
 }
 
@@ -332,7 +332,7 @@ bool SpellScript::castSpell(Creature* creature, const Position& pos, std::string
 
 Spell* SpellScript::getSpell(lua_State *L) {
 	lua_getglobal(L, "addressOfSpell");
-	int val = (int)lua_tonumber(L, -1);
+	uintptr_t val = (uintptr_t)lua_tonumber(L, -1);
 	lua_pop(L,1);
 	Spell* myspell = (Spell*)val;
 

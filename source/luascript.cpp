@@ -245,7 +245,7 @@ int LuaScript::setGlobalString(std::string var, std::string val)
 	return false;
 }
 
-int LuaScript::setGlobalNumber(std::string var, int val){
+int LuaScript::setGlobalNumber(std::string var, uintptr_t val){
 	lua_pushnumber(luaState, val);
 	lua_setglobal(luaState, var.c_str());
 	return true;

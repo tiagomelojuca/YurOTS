@@ -455,7 +455,7 @@ _player(NULL)
 	else
 		fclose(in);
 	lua_dofile(luaState, scriptname.c_str());
-	this->setGlobalNumber("addressOfActionScript", (uint64_t)this);
+	this->setGlobalNumber("addressOfActionScript", (uintptr_t)this);
 	this->loaded = true;
 	this->registerFunctions();
 }
@@ -717,7 +717,8 @@ int ActionScript::registerFunctions()
 
 ActionScript* ActionScript::getActionScript(lua_State *L){
 	lua_getglobal(L, "addressOfActionScript");
-	int val = (int)internalGetNumber(L);
+	uintptr_t val = (uintptr_t)lua_tonumber(L, -1);
+	lua_pop(L,1);
 	ActionScript* myaction = (ActionScript*)val;
 	if(!myaction){
 		return 0;
