@@ -1,0 +1,2118 @@
+PS C:\Users\JohnDoe\code\yurots-094f> cmake --build ./build >> stdout.log
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\lib\liolib.c:68: warning: "pclose" redefined
+   68 | #define pclose(f)    (-1)
+      |
+In file included from C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\lib\liolib.c:10:
+C:/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h:698: note: this is the location of the previous definition
+  698 | #define pclose _pclose
+      |
+In file included from C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\ltable.c:36:
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\ltable.c: In function 'luaH_mainposition':
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\llimits.h:72:23: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   72 | #define IntPoint(p)  ((lu_hash)(p))
+      |                       ^
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\ltable.h:13:32: note: in definition of macro 'gnode'
+   13 | #define gnode(t,i) (&(t)->node[i])
+      |                                ^
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\ltable.c:71:26: note: in expansion of macro 'hashmod'
+   71 | #define hashpointer(t,p) hashmod(t, IntPoint(p))
+      |                          ^~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\ltable.c:71:37: note: in expansion of macro 'IntPoint'
+   71 | #define hashpointer(t,p) hashmod(t, IntPoint(p))
+      |                                     ^~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\ltable.c:108:14: note: in expansion of macro 'hashpointer'
+  108 |       return hashpointer(t, pvalue(key));
+      |              ^~~~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\llimits.h:72:23: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   72 | #define IntPoint(p)  ((lu_hash)(p))
+      |                       ^
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\ltable.h:13:32: note: in definition of macro 'gnode'
+   13 | #define gnode(t,i) (&(t)->node[i])
+      |                                ^
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\ltable.c:71:26: note: in expansion of macro 'hashmod'
+   71 | #define hashpointer(t,p) hashmod(t, IntPoint(p))
+      |                          ^~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\ltable.c:71:37: note: in expansion of macro 'IntPoint'
+   71 | #define hashpointer(t,p) hashmod(t, IntPoint(p))
+      |                                     ^~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\build\_deps\liblua-src\src\ltable.c:110:14: note: in expansion of macro 'hashpointer'
+  110 |       return hashpointer(t, gcvalue(key));
+      |              ^~~~~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\c_regex_traits.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\c_regex_traits.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\c_regex_traits.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\c_regex_traits.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\c_regex_traits.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\c_regex_traits.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\c_regex_traits.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\c_regex_traits.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cpp_regex_traits.cpp:22:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cpp_regex_traits.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cpp_regex_traits.cpp:22:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cpp_regex_traits.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cpp_regex_traits.cpp:22:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cpp_regex_traits.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cpp_regex_traits.cpp:22:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cpp_regex_traits.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cregex.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cregex.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cregex.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cregex.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cregex.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cregex.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cregex.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\cregex.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\fileiter.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\fileiter.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\fileiter.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\fileiter.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\fileiter.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\fileiter.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\fileiter.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\fileiter.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\instances.cpp:30:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\instances.cpp:30:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\instances.cpp:30:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\instances.cpp:30:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\instances.cpp:30:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\instances.cpp:30:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\instances.cpp:30:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\instances.cpp:30:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\posix_api.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\posix_api.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\posix_api.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\posix_api.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\posix_api.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\posix_api.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\posix_api.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\posix_api.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex_traits_defaults.cpp:20:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex_traits_defaults.cpp:20:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex_traits_defaults.cpp:20:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex_traits_defaults.cpp:20:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex_traits_defaults.cpp:20:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex_traits_defaults.cpp:20:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex_traits_defaults.cpp:20:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_traits.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/regex_traits.hpp:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex_traits_defaults.cpp:20:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\regex.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wc_regex_traits.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wc_regex_traits.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wc_regex_traits.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wc_regex_traits.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wc_regex_traits.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wc_regex_traits.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wc_regex_traits.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/c_regex_traits.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wc_regex_traits.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wide_posix_api.cpp:26:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wide_posix_api.cpp:26:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wide_posix_api.cpp:26:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wide_posix_api.cpp:26:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wide_posix_api.cpp:26:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wide_posix_api.cpp:26:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wide_posix_api.cpp:26:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\wide_posix_api.cpp:26:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\winstances.cpp:3
+:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\winstances.cpp:3
+:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\winstances.cpp:3
+:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\winstances.cpp:3
+:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\winstances.cpp:3
+:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\winstances.cpp:3
+:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\winstances.cpp:3
+:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:19,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\build\_deps\boost-src\libs\regex\src\winstances.cpp:3
+:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:24:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:23:
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.h: In member function 'virtual char* IOAccount::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.h:35:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   35 |  virtual char* getSourceDescription(){return "Account source: NULL";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:24:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp: At global scope:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:24:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:24:
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h: In member function 'virtual char* IOPlayer::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:35:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   35 |  virtual char* getSourceDescription(){return "Player source: NULL";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:40,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:28:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp: At global scope:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/scoped_ptr.hpp:63:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   63 |     explicit scoped_ptr(std::auto_ptr<T> p): ptr(p.release()) // never throws
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:24:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:26,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:28:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/detail/shared_count.hpp:138:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  138 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:24:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:28:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:197:30: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  197 |     explicit shared_ptr(std::auto_ptr<Y> & r): px(r.get()), pn()
+      |                              ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:24:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex_workaround.hpp:42,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex/v4/regex.hpp:32,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/regex.hpp:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:28:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/shared_ptr.hpp:221:33: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+  221 |     shared_ptr & operator=(std::auto_ptr<Y> & r)
+      |                                 ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\aac.cpp:24:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\actions.cpp:25:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\actions.cpp:25:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\actions.cpp:25:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\chat.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\chat.cpp:22:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\chat.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\commands.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:26:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:47:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   47 |  {"/s",&Commands::placeNpc},
+      |   ^~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:48:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   48 |  {"/m",&Commands::placeMonster},
+      |   ^~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:49:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   49 |  {"/summon",&Commands::placeSummon},
+      |   ^~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:50:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   50 |  {"/B",&Commands::broadcastMessage},
+      |   ^~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:51:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   51 |  {"/b",&Commands::banPlayer},
+      |   ^~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:52:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   52 |  {"/t",&Commands::teleportMasterPos},
+      |   ^~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:53:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   53 |  {"/c",&Commands::teleportHere},
+      |   ^~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:54:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   54 |  {"/i",&Commands::createItems},
+      |   ^~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:55:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   55 |  {"/q",&Commands::substract_contMoney},
+      |   ^~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:56:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   56 |  {"/reload",&Commands::reloadInfo},
+      |   ^~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:57:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   57 |  {"/z",&Commands::testCommand},
+      |   ^~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:58:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   58 |  {"/goto",&Commands::teleportTo},
+      |   ^~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:59:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   59 |  {"/info",&Commands::getInfo},
+      |   ^~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:60:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   60 |  {"/closeserver",&Commands::closeServer},
+      |   ^~~~~~~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:61:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   61 |  {"/openserver",&Commands::openServer},
+      |   ^~~~~~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:62:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   62 |  {"/getonline",&Commands::onlineList},
+      |   ^~~~~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:63:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   63 |  {"/a",&Commands::teleportNTiles},
+      |   ^~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:64:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   64 |  {"/kick",&Commands::kickPlayer},
+      |   ^~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:66:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   66 |  {"/ban",&Commands::banCharacter},
+      |   ^~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:67:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   67 |  {"/up",&Commands::goUp},
+      |   ^~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:68:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   68 |  {"/down",&Commands::goDown},
+      |   ^~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:69:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   69 |  {"/pos",&Commands::showPos},
+      |   ^~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:70:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   70 |  {"/pvp",&Commands::setWorldType},
+      |   ^~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:71:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   71 |  {"/send",&Commands::teleportPlayerTo},
+      |   ^~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:72:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   72 |  {"/max",&Commands::setMaxPlayers},
+      |   ^~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:73:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   73 |  {"!exp",&Commands::showExpForLvl},
+      |   ^~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:74:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   74 |  {"!mana",&Commands::showManaForLvl},
+      |   ^~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:75:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   75 |  {"!report",&Commands::report},
+      |   ^~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:76:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   76 |  {"!online",&Commands::whoIsOnline},
+      |   ^~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:77:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   77 |  {"!uptime",&Commands::showUptime},
+      |   ^~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:80:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   80 |  {"/owner",&Commands::setHouseOwner},
+      |   ^~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:81:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   81 |  {"!house",&Commands::reloadRights},
+      |   ^~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:84:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   84 |  {"/invisible",&Commands::gmInvisible},
+      |   ^~~~~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:87:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   87 |  {"!frags",&Commands::showFrags},
+      |   ^~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:90:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   90 |  {"/save",&Commands::forceServerSave},
+      |   ^~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:93:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   93 |  {"/shutdown",&Commands::shutdown},
+      |   ^~~~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:96:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   96 |  {"/clean",&Commands::cleanMap},
+      |   ^~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:99:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   99 |  {"/promote",&Commands::promote},
+      |   ^~~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:100:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  100 |  {"/premmy",&Commands::premmy},
+      |   ^~~~~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\commands.cpp:101:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  101 |  {"!premmy",&Commands::showPremmy},
+      |   ^~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.cpp:28:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.cpp:28:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.cpp:28:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.cpp:42:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/bind.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.cpp:36:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:8,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/bind.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.cpp:36:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\game.cpp:53:
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h: In member function 'virtual char* IOPlayer::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:35:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   35 |  virtual char* getSourceDescription(){return "Player source: NULL";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\guilds.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\guilds.cpp:22:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\guilds.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:30,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\houses.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\houses.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\houses.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\houses.cpp:21:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\houses.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\houses.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.cpp:21:
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.h: In member function 'virtual char* IOAccount::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.h:35:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   35 |  virtual char* getSourceDescription(){return "Account source: NULL";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.cpp:26:
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccountxml.h: In member function 'virtual char* IOAccountXML::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccountxml.h:38:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   38 |  virtual char* getSourceDescription(){return "XML";};
+      |                                              ^~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\ioaccountxml.h:31,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioaccountxml.cpp:21:
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.h: In member function 'virtual char* IOAccount::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.h:35:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   35 |  virtual char* getSourceDescription(){return "Account source: NULL";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\ioaccountxml.cpp:21:
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccountxml.h: In member function 'virtual char* IOAccountXML::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccountxml.h:38:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   38 |  virtual char* getSourceDescription(){return "XML";};
+      |                                              ^~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomap.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapotbm.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapotbm.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomap.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapotbm.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapotbm.cpp:21:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomap.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapotbm.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapotbm.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\iomapotbm.cpp:21:
+C:\Users\JohnDoe\code\yurots-094f\source\iomapotbm.h: In member function 'virtual char* IOMapOTBM::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\iomapotbm.h:30:47: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   30 |  virtual char* getSourceDescription(){ return "OTBM"; };
+      |                                               ^~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomap.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapxml.h:29,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapxml.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomap.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapxml.h:29,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapxml.cpp:21:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomap.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapxml.h:29,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomapxml.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\iomapxml.cpp:21:
+C:\Users\JohnDoe\code\yurots-094f\source\iomapxml.h: In member function 'virtual char* IOMapXML::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\iomapxml.h:38:47: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   38 |  virtual char* getSourceDescription(){ return "OTX (XML2-based)"; };
+      |                                               ^~~~~~~~~~~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.cpp:21:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.cpp:21:
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h: In member function 'virtual char* IOPlayer::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:35:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   35 |  virtual char* getSourceDescription(){return "Player source: NULL";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.cpp:26:
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayerxml.h: In member function 'virtual char* IOPlayerXML::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayerxml.h:39:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   39 |  virtual char* getSourceDescription(){return "Player source: XML";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayerxml.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayerxml.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\ioplayerxml.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\ioplayerxml.cpp:23:
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h: In member function 'virtual char* IOPlayer::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:35:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   35 |  virtual char* getSourceDescription(){return "Player source: NULL";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\ioplayerxml.cpp:24:
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayerxml.h: In member function 'virtual char* IOPlayerXML::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayerxml.h:39:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   39 |  virtual char* getSourceDescription(){return "Player source: XML";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\ioplayerxml.cpp:25:
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.h: In member function 'virtual char* IOAccount::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.h:35:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   35 |  virtual char* getSourceDescription(){return "Account source: NULL";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.cpp:24:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.cpp:26:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.cpp:26:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spells.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.cpp:27:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spells.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\loginqueue.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\loginqueue.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\loginqueue.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\luascript.cpp:26:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\luascript.cpp:26:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\luascript.cpp:26:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\magic.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monster.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\magic.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monster.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\magic.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\iomap.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.cpp:35:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/bind.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.cpp:31:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:8,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/bind.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.cpp:31:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\map.cpp:41:
+C:\Users\JohnDoe\code\yurots-094f\source\iomapxml.h: In member function 'virtual char* IOMapXML::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\iomapxml.h:38:47: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   38 |  virtual char* getSourceDescription(){ return "OTX (XML2-based)"; };
+      |                                               ^~~~~~~~~~~~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\map.cpp:42:
+C:\Users\JohnDoe\code\yurots-094f\source\iomapotbm.h: In member function 'virtual char* IOMapOTBM::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\iomapotbm.h:30:47: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   30 |  virtual char* getSourceDescription(){ return "OTBM"; };
+      |                                               ^~~~~~
+C:\Users\JohnDoe\code\yurots-094f\source\mdump.cpp: In static member function 'static LONG MiniDumper::TopLevelFilter(_EXCEPTION_POINTERS*)':
+C:\Users\JohnDoe\code\yurots-094f\source\mdump.cpp:76:26: warning: converting to non-pointer type 'WINBOOL' {aka 'int'} from NULL [-Wconversion-null]
+   76 |  ExInfo.ClientPointers = NULL;
+      |                          ^~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monster.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monster.cpp:25:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monster.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monster.cpp:25:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monster.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monster.cpp:25:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monsters.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monsters.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spells.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monsters.cpp:22:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spells.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\monsters.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\networkmessage.cpp:27:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\networkmessage.cpp:30:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\map.h:35,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.h:32,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\networkmessage.cpp:30:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\container.h:24,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\creature.h:28,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\npc.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\npc.cpp:34:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\npc.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\npc.cpp:34:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\npc.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\npc.cpp:34:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol76.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\otserv.cpp:32:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol76.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\otserv.cpp:32:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/bits/locale_conv.h:41,
+                 from C:/msys64/mingw64/include/c++/10.3.0/locale:43,
+                 from C:/msys64/mingw64/include/c++/10.3.0/iomanip:43,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\otserv.cpp:25:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\otserv.cpp:38:
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.h: In member function 'virtual char* IOAccount::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioaccount.h:35:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   35 |  virtual char* getSourceDescription(){return "Account source: NULL";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\otserv.cpp:39:
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h: In member function 'virtual char* IOPlayer::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:35:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   35 |  virtual char* getSourceDescription(){return "Player source: NULL";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.cpp:35:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.cpp:35:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\player.cpp:35:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol.cpp:23:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol.cpp:23:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol76.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol76.cpp:31:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol76.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol76.cpp:31:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol76.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\protocol76.cpp:31:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:\Users\JohnDoe\code\yurots-094f\source\protocol76.cpp:48:
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h: In member function 'virtual char* IOPlayer::getSourceDescription()':
+C:\Users\JohnDoe\code\yurots-094f\source\ioplayer.h:35:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   35 |  virtual char* getSourceDescription(){return "Player source: NULL";};
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\pvparena.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\pvparena.cpp:22:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\pvparena.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\readables.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\readables.cpp:22:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\readables.cpp:22:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.cpp:1:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.cpp:1:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.cpp:21:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.cpp:21:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spells.h:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spells.cpp:36:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/bind.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spells.cpp:34:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:8,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/bind.hpp:26,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spells.cpp:34:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\status.cpp:26:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\status.cpp:26:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\spawn.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\game.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\status.cpp:26:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\thing.cpp:3:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\thing.cpp:3:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\thing.cpp:3:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/ext/hash_map:60,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\items.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\item.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:27,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.cpp:28:
+C:/msys64/mingw64/include/c++/10.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/mem_fn.hpp:25,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:17,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.cpp:28:
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/get_pointer.hpp:21:40: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+   21 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/10.3.0/memory:83,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/function_base.hpp:15,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function/detail/prologue.hpp:16,
+                 from C:/Users/JohnDoe/code/yurots-094f/build/_deps/boost-src/boost/function.hpp:22,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\scheduler.h:25,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.h:33,
+                 from C:\Users\JohnDoe\code\yurots-094f\source\tile.cpp:28:
+C:/msys64/mingw64/include/c++/10.3.0/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles\LibXml2Mod.dir/objects.a(libxml.c.obj): in function `initlibxml2mod':
+C:/Users/JohnDoe/code/yurots-094f/build/_deps/libxml2-src/python/libxml.c:3916: undefined reference to `__imp_Py_InitModule4'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make[2]: *** [_deps\libxml2-build\CMakeFiles\LibXml2Mod.dir\build.make:136: _deps/libxml2-build/libxml2mod.dll] Error 1
+mingw32-make[1]: *** [CMakeFiles\Makefile2:217: _deps/libxml2-build/CMakeFiles/LibXml2Mod.dir/all] Error 2
+mingw32-make: *** [Makefile:155: all] Error 2
